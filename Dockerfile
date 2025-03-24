@@ -4,7 +4,6 @@ FROM eclipse-temurin:17-jdk as build
 WORKDIR /app
 
 # Copy Maven wrapper and pom.xml first to cache dependencies
-COPY .mvn/ .mvn/
 COPY mvnw .
 COPY pom.xml .
 
